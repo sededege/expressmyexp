@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "mongo",
+			"path": ".."
+		},
+		{
+			"name": "modelos",
+			"path": "../../../Downloads/servidor/modelos"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "mongo"
+	}
+}
