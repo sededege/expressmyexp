@@ -1,38 +1,29 @@
 let mongoose = require("mongoose");
 let Schema = mongoose.Schema;
 
-let egresoSchema = new Schema({
-    egreso: {
+let userSchema = new Schema({
+    nombre: {
         type: String,
         required: true,
         trim: true
     },
-    categoria: {
+    apellido: {
         type: String,
         required: true,
         trim: true
     },
-    monto:  {
+    usuario:  {
         type: String,
         required: true,
         trim: true
-    }
-}); 
-
-/* let usuarioSchema = new Schema({
-  
-    correo:  {
-        type: String,
-        required: true,
-        trim: true,
-        unique: true
     },
     password:  {
         type: String,
         required: true,
         trim: true
     }
-}); */
-let Egreso = mongoose.model("Egreso", egresoSchema);
+}); 
 
-module.exports = Egreso;
+let User = mongoose.model("User", userSchema);
+
+module.exports = User;
