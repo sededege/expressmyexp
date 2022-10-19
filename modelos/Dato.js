@@ -33,20 +33,7 @@ let datoSchema = new Schema({
       },
 }); 
 
-/* let usuarioSchema = new Schema({
-  
-    correo:  {
-        type: String,
-        required: true,
-        trim: true,
-        unique: true
-    },
-    password:  {
-        type: String,
-        required: true,
-        trim: true
-    }
-}); */
+
 let Dato = mongoose.model("Dato", datoSchema);
 
 module.exports = Dato;

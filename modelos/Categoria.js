@@ -15,20 +15,6 @@ let categoriaSchema = new Schema({
     }
 }); 
 
-/* let usuarioSchema = new Schema({
-  
-    correo:  {
-        type: String,
-        required: true,
-        trim: true,
-        unique: true
-    },
-    password:  {
-        type: String,
-        required: true,
-        trim: true
-    }
-}); */
 let Cat = mongoose.model("Cat", categoriaSchema);
 
 module.exports = Cat;

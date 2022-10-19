@@ -122,6 +122,7 @@ app.post("/insertarDato", (req, res) => {
         res.json(item);
     })
 })
+
 app.post("/insertarCat", (req, res) => {
     let item = new Cat({
         categoria: req.body.categoria,
