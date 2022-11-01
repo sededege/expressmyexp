@@ -4,10 +4,11 @@ let cors = require("cors");
 let mongoose = require("mongoose");
 mongoose.set("useUnifiedTopology", true);
 mongoose.set('useCreateIndex', true);
-mongoose.connect("mongodb+srv://admin:admin@informacion.xgdwt.mongodb.net/info?retryWrites=true&w=majority",
+/* mongoose.connect("mongodb+srv://admin:admin@informacion.xgdwt.mongodb.net/info?retryWrites=true&w=majority",
     { useNewUrlParser: true }
-
-
+) */
+mongoose.connect("mongodb+srv://sededege:gagetere@cluster0.krvpmpm.mongodb.net/test",
+    { useNewUrlParser: true }
 )
 
 let Cat = require("./modelos/Categoria");
@@ -124,6 +125,7 @@ app.post("/insertarDato", (req, res) => {
 })
 
 app.post("/insertarCat", (req, res) => {
+    console.log(req.body)
     let item = new Cat({
         categoria: req.body.categoria,
         objetivo: req.body.objetivo,
